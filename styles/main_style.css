@@ -81,8 +81,17 @@ nav #flowers_list .name {
 
 /* Boutton */
 
-. {
+.night_theme_button {
     background-color: var(--black-font-color);
+}
+
+.category {
+    height: 43dvw;
+    margin: 40px 20px;
+
+    overflow: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
 }
 
 /* Flowers Cards */
@@ -90,22 +99,20 @@ nav #flowers_list .name {
 .flowers_card_grid {
     /* margin: 20px 30px; */
     padding: 20px 80px;
-    height: 43dvw;
 
     display: grid;
-    grid-auto-columns: minmax(35dvw, 35dvw);
+    grid-auto-columns: minmax(30dvw, 30dvw);
     grid-gap: 5dvw;
     grid-auto-flow: column dense;
 
-    overflow: scroll;
-    overflow-y: hidden;
-
-    scrollbar-width: thin;
 }
 
 .flowers_card {
-    height: 35dvw;
-    /* margin: 10px 15px; */
+    height: 30dvw;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     background-color: #fff;
     border-radius: 10px;
@@ -124,16 +131,35 @@ nav #flowers_list .name {
 
 .flowers_card .description {
     margin: 15px;
-    font-size: 2dvw;
+    font-size: 1.2dvw;
     text-align: center;
 }
 
-.flowers_card a::before {
-    display: contents;
-    content: url(../pictures/svg/circle-info-solid.svg);
-    width: 1px;
-    height: 1px;
+.flowers_card a {
+    padding: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
 }
+
+.flowers_card a i {
+    margin-left: 5px;
+}
+
+/* .flowers_card a::before {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;    
+    content: f05a;
+
+    color: aqua;
+} */
 
 .card {
     /* 3D EFFECT */
@@ -143,7 +169,6 @@ nav #flowers_list .name {
         rotateY(16deg)
         rotateZ(-4deg);
     box-shadow: -15px 15px 10px #2a0e2663;
-    border-radius: 2px;
 
     /* SMOOTHING */
     transition: all 0.4s ease-in-out;
@@ -155,8 +180,11 @@ nav #flowers_list .name {
         perspective(1000px)
         rotateX(0deg)
         rotateY(0deg)
-        rotateZ(0deg);
-    box-shadow: -5px 5px 5px #3b0e3663;
+        rotateZ(0deg)
+        scale(1.2);
+    box-shadow: 
+        -10px 10px 10px #2a0e2663,
+        6px -6px 10px #2a0e2647;
 
     /* SMOOTHING */
     transition: all 0.4s ease-in-out;
