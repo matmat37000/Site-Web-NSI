@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flower-img {
+    margin: 60px;
+    border-radius: 20px;
+}
+

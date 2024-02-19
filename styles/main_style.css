@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --title-font: 'Lilita One', sans-serif;
+    --main-font: 'Gaegu', sans-serif;
+    --sub-font: 'Gamja Flower', sans-serif;
+    
+    --black-font-color: #1f1f1f;
+    --white-font-color: #e0eaeb;
+
+    --background--color: #ebd7aa;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    scroll-snap-type: proximity;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: var(--background--color);
+    color: var(--black-font-color);
+    font-family: var(--main-font);
+    scrollbar-width: thin;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+nav #flower_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav #flowers_list .name {
+    font-size: 32px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: var(--black-font-color);
+}
+
+#title_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title_div .title {
+    text-align: center;
+    font-size: 32dvh;
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+}
+
+#title_div .subtitle {
+    font-family: var(--sub-font);
+}
+
+/* Boutton */
+
+. {
+    background-color: var(--black-font-color);
+}
+
+/* Flowers Cards */
+
+.flowers_card_grid {
+    /* margin: 20px 30px; */
+    padding: 20px 80px;
+    height: 43dvw;
+
+    display: grid;
+    grid-auto-columns: minmax(35dvw, 35dvw);
+    grid-gap: 5dvw;
+    grid-auto-flow: column dense;
+
+    overflow: scroll;
+    overflow-y: hidden;
+
+    scrollbar-width: thin;
+}
+
+.flowers_card {
+    height: 35dvw;
+    /* margin: 10px 15px; */
+
+    background-color: #fff;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    
+    overflow: hidden;
+}
+
+.flowers_card .card_title {
+    font-size: 8dvh;
+    text-align: center;
+}
+
+.flowers_card .description {
+    margin: 15px;
+    font-size: 2dvw;
+    text-align: center;
+}
+
+.flowers_card a::before {
+    display: contents;
+    content: url(../pictures/svg/circle-info-solid.svg);
+    width: 1px;
+    height: 1px;
+}
+
+.card {
+    /* 3D EFFECT */
+    transform:
+        perspective(1000px)
+        rotateX(4deg)
+        rotateY(16deg)
+        rotateZ(-4deg);
+    box-shadow: -15px 15px 10px #2a0e2663;
+    border-radius: 2px;
+
+    /* SMOOTHING */
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+    /* 3D EFFECT */
+    transform:
+        perspective(1000px)
+        rotateX(0deg)
+        rotateY(0deg)
+        rotateZ(0deg);
+    box-shadow: -5px 5px 5px #3b0e3663;
+
+    /* SMOOTHING */
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* Flower cards custom */
+
+#red_naomi {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color);
+}
+
+#renoncule {
+    background-image: url("../pictures/renoncule.jpg");
+    color: var(--white-font-color);
+}
+
+#tulipe {
+    background-image: url("../pictures/tulipes.jpg");
+    color: var(--black-font-color);
+}
+
+#wax {
+    background-image: url("../pictures/wax.jpg");
+    color: var(--black-font-color);
+}
+
+
+@media (max-width: 600px) {
+
+}
