@@ -49,6 +49,8 @@ body {
     color: var(--black-font-color);
     font-family: var(--main-font);
     scrollbar-width: thin;
+
+    transition: background-color 0.1s ease-in-out;
 }
 
 html, body {
