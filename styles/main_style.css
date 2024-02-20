@@ -14,9 +14,22 @@
     
     --black-font-color: #1f1f1f;
     --white-font-color: #e0eaeb;
-
-    --background--color: #ebd7aa;
+    
+    --black-font-color-card: #1f1f1f;
+    --white-font-color-card: #e0eaeb;
+    
+    --background-color: #ebd7aa;
+    --secondary-background-color: #e6bd60;
 }
+
+/* Boutton */
+/* 
+.night_theme_button {
+    --black-font-color: #e0eaeb;
+    --white-font-color: #1f1f1f;
+    --background-color: #142755;
+    --secondary-background-color: #071141;
+} */
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -26,11 +39,13 @@ html {
     scroll-behavior: smooth;
     scroll-snap-align: start;
     scroll-snap-type: proximity;
+    scrollbar-color: var(--black-font-color) var(--background-color);
     scrollbar-width: none;
 }
 
 body {
-    background-color: var(--background--color);
+    /* background: linear-gradient(var(--secondary-background-color) , var(--background-color)); */
+    background-color: var(--background-color);
     color: var(--black-font-color);
     font-family: var(--main-font);
     scrollbar-width: thin;
@@ -79,30 +94,24 @@ nav #flowers_list .name {
     font-family: var(--sub-font);
 }
 
-/* Boutton */
-
-.night_theme_button {
-    background-color: var(--black-font-color);
-}
 
 .category {
-    height: 43dvw;
+    padding: 40px 40px;
     margin: 40px 20px;
 
-    overflow: scroll;
+    overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: inherit;
 }
 
 /* Flowers Cards */
 
 .flowers_card_grid {
-    /* margin: 20px 30px; */
-    padding: 20px 80px;
-
     display: grid;
     grid-auto-columns: minmax(30dvw, 30dvw);
-    grid-gap: 5dvw;
+    grid-gap: 3dvw;
     grid-auto-flow: column dense;
 
 }
@@ -137,7 +146,7 @@ nav #flowers_list .name {
 
 .flowers_card a {
     padding: 20px;
-    background-color: red;
+    background-color: #FF3526b5;
     display: flex;
     align-items: center;
     color: white;
@@ -167,7 +176,8 @@ nav #flowers_list .name {
         perspective(1000px)
         rotateX(4deg)
         rotateY(16deg)
-        rotateZ(-4deg);
+        rotateZ(-4deg)
+        scale(0.9);
     box-shadow: -15px 15px 10px #2a0e2663;
 
     /* SMOOTHING */
@@ -181,7 +191,7 @@ nav #flowers_list .name {
         rotateX(0deg)
         rotateY(0deg)
         rotateZ(0deg)
-        scale(1.15);
+        scale(1.1);
     box-shadow: 
         -10px 10px 10px #2a0e2663,
         6px -6px 10px #2a0e2647;
@@ -195,22 +205,22 @@ nav #flowers_list .name {
 
 #red_naomi {
     background-image: url("../pictures/roses.jpg");
-    color: var(--white-font-color);
+    color: var(--white-font-color-card);
 }
 
 #renoncule {
     background-image: url("../pictures/renoncule.jpg");
-    color: var(--white-font-color);
+    color: var(--white-font-color-card);
 }
 
 #tulipe {
     background-image: url("../pictures/tulipes.jpg");
-    color: var(--black-font-color);
+    color: var(--black-font-color-card);
 }
 
 #wax {
     background-image: url("../pictures/wax.jpg");
-    color: var(--black-font-color);
+    color: var(--black-font-color-card);
 }
 
 
