@@ -11,27 +11,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Gamja+Flower&family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/edb39067d5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
+        <nav id="main">
             <div id="flowers_list">
                 <a href="#red_naomi" class="name">Roses</a>
                 <a href="#tulipe" class="name">Tulipe</a>
                 <a href="#renoncule" class="name">Renoncule</a>
-                <button onclick="funcDayToNight()">Day</button>
                 <a href="#wax" class="name">Wax</a>
                 <a href="#fraisea" class="name">Fraisea</a>
                 <a href="" class="name">Flower 6</a>
             </div>
+            <button class="switch" onclick="funcDayToNight()">
+                <i id="button-icon-cb" class="fa-solid fa-sun"></i>
+            </button>
         </nav>
         
         <div id="title_div">
-            <h1 class="title">Hello</h1>
-            <h2 class="subtitle"></h2>
+            <h1 class="title">FlowerLib</h1>
+            <h2 class="subtitle">a python library for flowers</h2>
+            <a href="#first-category" class="see-more">Explore !</a>
         </div>
         
-        <div class="category">
+        <div id="first-category" class="category">
             <h2>Fleurs</h2>
             <div class="flowers_card_grid">
                 <div id="red_naomi" class="flowers_card card">
@@ -102,6 +106,6 @@
                 </div>
             </div>
         </div>
+        <script src="scripts/script.js"></script>
     </body>
-    <script src="scripts/script.js"></script>
 </html>

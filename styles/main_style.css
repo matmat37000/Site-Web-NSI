@@ -8,7 +8,7 @@
 }
 
 :root {
-    --title-font: 'Lilita One', sans-serif;
+    --title-font: "Pacifico", cursive;
     --main-font: 'Gaegu', sans-serif;
     --sub-font: 'Gamja Flower', sans-serif;
     
@@ -20,16 +20,10 @@
     
     --background-color: #ebd7aa;
     --secondary-background-color: #e6bd60;
+
+    --day: #ffc400;
 }
 
-/* Boutton */
-/* 
-.night_theme_button {
-    --black-font-color: #e0eaeb;
-    --white-font-color: #1f1f1f;
-    --background-color: #142755;
-    --secondary-background-color: #071141;
-} */
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -49,7 +43,7 @@ body {
     color: var(--black-font-color);
     font-family: var(--main-font);
     scrollbar-width: thin;
-
+    
     transition: background-color 0.1s ease-in-out;
 }
 
@@ -58,37 +52,80 @@ html, body {
     height: 100%;
 }
 
-nav {
+nav#main {
+    margin: 50px 30px;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
 }
 
-nav #flower_list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-nav #flowers_list .name {
-    font-size: 32px;
-    padding: 10px 30px;
+nav a {
+    position: relative;
     text-decoration: none;
     color: var(--black-font-color);
+    font-size: 30px;
+    font-family: var(--sub-font);
+    margin: 0 10px;
+}
+
+nav a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: var(--black-font-color);
+    content: "";
+    width: 0%;
+    height: 2px;
+    transition: width 0.2s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: width 0.2s ease-in-out;
+}
+
+/* Boutton */
+ 
+.night_theme_button {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+} 
+
+.switch {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: var(--day);
+    cursor: pointer;
 }
 
 #title_div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 90vh;
 }
 
 #title_div .title {
     text-align: center;
     font-size: 32dvh;
-    font-family: var(--main-font);
+    font-family: var(--title-font);
     letter-spacing: 1px;
 }
 
@@ -96,16 +133,35 @@ nav #flowers_list .name {
     font-family: var(--sub-font);
 }
 
+#title_div .subtitle:first-letter {
+    text-transform: uppercase;
+}
+
+#title_div .see-more {
+    text-decoration: none;
+    color: var(--black-font-color);
+    font-size: 30px;
+    font-family: var(--sub-font);
+    margin: 0 10px;
+}
+
 
 .category {
     padding: 40px 40px;
     margin: 40px 20px;
-
+    
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: thin;
     scroll-behavior: smooth;
     scrollbar-color: inherit;
+}
+
+.category h2 {
+    text-align: center;
+    font-size: 60px;
+    font-family: var(--title-font);
+    letter-spacing: 1px;
 }
 
 /* Flowers Cards */
@@ -115,7 +171,7 @@ nav #flowers_list .name {
     grid-auto-columns: minmax(30dvw, 30dvw);
     grid-gap: 3dvw;
     grid-auto-flow: column dense;
-
+    
 }
 
 .flowers_card {
@@ -124,7 +180,7 @@ nav #flowers_list .name {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    
     background-color: #fff;
     border-radius: 10px;
     background-size: cover;
@@ -153,6 +209,7 @@ nav #flowers_list .name {
     align-items: center;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .flowers_card a i {
