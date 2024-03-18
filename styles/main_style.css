@@ -159,7 +159,7 @@ nav a:hover::after {
     scrollbar-color: inherit;
 }
 
-.category h2 {
+.category-name {
     text-align: center;
     font-size: 60px;
     font-family: var(--title-font);
@@ -170,18 +170,19 @@ nav a:hover::after {
 
 .flowers_card_grid {
     display: grid;
-    grid-auto-columns: minmax(30dvw, 30dvw);
+    grid-auto-columns: minmax(25dvw, 25dvw);
     grid-gap: 3dvw;
     grid-auto-flow: column dense;
     
 }
 
 .flowers_card {
-    height: 30dvw;
+    height: 25dvw;
     
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     
     background-color: #fff;
     border-radius: 10px;
@@ -202,6 +203,7 @@ nav a:hover::after {
     margin: 15px;
     font-size: 1.2dvw;
     text-align: center;
+    display: none;
 }
 
 .flowers_card a {
@@ -288,6 +290,69 @@ nav a:hover::after {
 #wax a {
     color: var(--white-font-color-card);
     background-color: red;
+}
+
+#cyclamen {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color-card);
+}
+
+#cyclamen a {
+    background-color: red;
+}
+
+#rosier {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color-card);
+}
+
+#rosier a {
+    background-color: red;
+}
+
+#solanome {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color-card);
+}
+
+#solanome a {
+    background-color: red;
+}
+
+#auturium {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color-card);
+}
+
+#auturium a {
+    background-color: red;
+}
+
+#spatyphilium {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color-card);
+}
+
+#spatyphilium a {
+    background-color: red;
+}
+
+#fougere {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color-card);
+}
+
+#fougere a {
+
+}
+
+#orchidees {
+    background-image: url("../pictures/roses.jpg");
+    color: var(--white-font-color-card);
+}
+
+#orchidees a {
+
 }
 
 @media (max-width: 600px) {
