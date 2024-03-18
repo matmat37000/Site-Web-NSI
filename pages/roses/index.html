@@ -7,21 +7,33 @@
 
     <link rel="stylesheet" href="../../styles/main_style.css">
     <link rel="stylesheet" href="../../styles/flowers_pages_style.css">
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Gamja+Flower&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Gamja+Flower&family=Lilita+One&family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="back">
         <a href="../../index.html" class="nav_link">Back</a>
         <button class="switch" onclick="funcDayToNight()">
-            <img src="./svg/sun.svg" id="button-icon-cb"></img>
+            <img src="../../svg/sun.png" id="button-icon-cb"></img>
         </button>
     </nav>
     <main>
-        <img src="../../pictures/roses.jpg" alt="roses" class="flower-img">
-        <div id="text">
+        <div class="flower-img-div">
+            <img src="../../pictures/roses.jpg" alt="roses" class="flower-img">
+        </div>
+        <div class="wiki" id="text">
             <h1 class="title">Roses</h1>
-            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad repudiandae laboriosam nisi id accusantium, unde incidunt voluptate, quos consectetur ut magni inventore fugit, doloribus aliquid assumenda excepturi rem itaque maxime?</p>
+            <p class="description">la rose est la fleur du <a href="pages/rosier/">rosier</a>, c'est la fleur la plus connue et apprecier depuis l'Antiquité grâce à sa beauté et son parfum. La rose est l’une des plantes les plus cultivées au monde et elle occupe la première place dans le marché des fleurs.</p>
+            <h3 class="title">Genre et famille :</h3>
+            <p class="description">Rosa ,Rosaceae</p>
+            <h3 class="title">Autres fleurs des éspèces du genre: Rosa</h3>
+            <p class="description">Cardinal de Richelieu, Cuisse de Nymphe émue</p>
         </div>
     </main>
-    <script src="scripts/script.js"></script>
+    <script src="../../scripts/script.js"></script>
 </body>
 </html>

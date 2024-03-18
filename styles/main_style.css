@@ -9,7 +9,7 @@
 
 :root {
     --title-font: "Pacifico", cursive;
-    --main-font: 'Gaegu', sans-serif;
+    --main-font: "Madimi One", sans-serif;
     --sub-font: 'Gamja Flower', sans-serif;
     --link-color: #006992;
 
@@ -115,6 +115,10 @@ nav a:hover::after {
     background-color: var(--day);
     cursor: pointer;
     border: 2px ridge white;
+}
+
+.switch img {
+    width: 20px;
 }
 
 #title_div {
@@ -284,7 +288,7 @@ nav a:hover::after {
 
 #wax {
     background-image: url("../pictures/wax.jpg");
-    color: var(--black-font-color-card);
+    color: var(--white-font-color-card);
 }
 
 #wax a {
@@ -292,8 +296,18 @@ nav a:hover::after {
     background-color: red;
 }
 
+#fraisea {
+    background-image: url("../pictures/fraisea.png");
+    color: var(--black-font-color-card);
+}
+
+#fraisea a {
+    color: var(--white-font-color-card);
+    background-color: red;
+}
+
 #cyclamen {
-    background-image: url("../pictures/roses.jpg");
+    background-image: url("../pictures/cyclamen.jpg");
     color: var(--white-font-color-card);
 }
 
@@ -302,7 +316,7 @@ nav a:hover::after {
 }
 
 #rosier {
-    background-image: url("../pictures/roses.jpg");
+    background-image: url("../pictures/rosier.jpg");
     color: var(--white-font-color-card);
 }
 
@@ -311,7 +325,7 @@ nav a:hover::after {
 }
 
 #solanome {
-    background-image: url("../pictures/roses.jpg");
+    background-image: url("../pictures/Solanome.jpg");
     color: var(--white-font-color-card);
 }
 
@@ -320,40 +334,72 @@ nav a:hover::after {
 }
 
 #auturium {
-    background-image: url("../pictures/roses.jpg");
+    background-image: url("../pictures/Anthurium.jpg");
     color: var(--white-font-color-card);
 }
 
 #auturium a {
-    background-color: red;
+    background-color: #fc86c2;
 }
 
 #spatyphilium {
-    background-image: url("../pictures/roses.jpg");
+    background-image: url("../pictures/Spatyphilium.jpg");
     color: var(--white-font-color-card);
 }
 
 #spatyphilium a {
-    background-color: red;
+    background-color: #fc86c2;
 }
 
 #fougere {
-    background-image: url("../pictures/roses.jpg");
+    background-image: url("../pictures/fougeres.jpg");
     color: var(--white-font-color-card);
 }
 
 #fougere a {
-
+    background-color: #fc86c2;
 }
 
 #orchidees {
-    background-image: url("../pictures/roses.jpg");
+    background-image: url("../pictures/Orchidees.jpg");
     color: var(--white-font-color-card);
 }
 
 #orchidees a {
-
+    background-color: #fc86c2;
 }
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background-color: #19191a;
+    height: 20dvh;
+}
+
+footer div .link {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .link a {
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 80px;
+}
+
+footer .link a i {
+    padding-right: 5px;
+}
+
+/* Media queries */
 
 @media (max-width: 600px) {
 

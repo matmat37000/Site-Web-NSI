@@ -12,20 +12,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Gamja+Flower&family=Lilita+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Gamja+Flower&family=Lilita+One&family=Madimi+One&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/edb39067d5.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav id="main">
             <div id="flowers_list">
-                <a href="#red_naomi" class="name">Roses</a>
-                <a href="#tulipe" class="name">Tulipe</a>
-                <a href="#renoncule" class="name">Renoncule</a>
-                <a href="#wax" class="name">Wax</a>
-                <a href="#fraisea" class="name">Fraisea</a>
-                <a href="" class="name">Flower 6</a>
+                <a href="#flowers" class="name">Fleurs</a>
+                <a href="#plantes-exterieur" class="name">Plantes Exterieur</a>
+                <a href="#plantes-interieur" class="name">Plantes Interieur</a>
+                <a href="#source" class="name">Source</a>
             </div>
             <button class="switch" onclick="funcDayToNight()">
-                <img src="./svg/sun.svg" id="button-icon-cb"></img>
+                <img src="./svg/sun.png" id="button-icon-cb"></img>
             </button>
         </nav>
         
@@ -35,7 +34,7 @@
             <a href="#first-category" class="see-more">Explore !</a>
         </div>
         
-        <h2 class="category-name">Fleurs</h2>
+        <h2 id="flowers" class="category-name">Fleurs</h2>
         <div id="first-category" class="category">
             <div class="flowers_card_grid">
                 <div id="red_naomi" class="flowers_card card">
@@ -70,7 +69,7 @@
             </div>
         </div>
 
-        <h2 class="category-name">Plantes Exterieur</h2>
+        <h2 id="plantes-exterieur" class="category-name">Plantes Exterieur</h2>
         <div class="category">
             <div class="flowers_card_grid">
                 <div id="cyclamen" class="flowers_card card">
@@ -91,9 +90,10 @@
                     <a href="pages/roses/">Plus d'info <i class="fa-solid fa-circle-info"></i></a>
                 </div>
             </div>
+        </div>
             
-            <h2 class="category-name">Plantes Intérieur</h2>
-            <div class="category">
+        <h2 id="plantes-interieur" class="category-name">Plantes Intérieur</h2>
+        <div class="category">
                 <div class="flowers_card_grid">
                     <div id="auturium" class="flowers_card card">
                         <h4 class="card_title">Auturium</h4>
@@ -120,6 +120,25 @@
                     </div>
                 </div>
         </div>
+        
         <script src="scripts/script.js"></script>
+        
+        <footer id="source">
+            <p class="footer-text">Copyright © 2024. Tous droits réservés.</p>
+            <div>
+                <div class="link">
+                    <a target="_blank" href="https://github.com/matmat37000/Site-Web-NSI"><i class="fa-brands fa-square-github"></i> Github</a>
+                    <a target="_blank" href="https://www.wikipedia.org/"><i class="fa-brands fa-wikipedia-w"></i>WikiPedia</a>
+                    <a target="_blank" href="https://www.plantsrescue.com/"><i class="fa-solid fa-book-atlas"></i>Plants Rescue</a>
+                    <a target="_blank" href="https://fontawesome.com"><i class="fa-solid fa-font-awesome"></i>Fontawesome</a>
+                    <a target="_blank" href="https://www.flaticon.com/"><i class="fa-solid fa-icons"></i>Flaticon</a>
+                    <a target="_blank" href="https://www.google.com/"><i class="fa-brands fa-google"></i>Google</a>
+                    <a href="https://fonts.google.com/"><i class="fa-brands fa-google"></i>Google Fonts</a>
+                    <a href="https://developer.mozilla.org/fr/"><i class="fa-solid fa-code"></i>Mozilla</a>
+                    <a href="https://github.com/CheeseOnBaguetteGameStudio"><i class="fa-solid fa-cheese"></i>Cheese On Baguette Game Studio</a>
+                </div>
+            </div>
+            <p style="font-size: 14px;">"Vous avez vu monsieur, ça nous arrive de toucher de l'herbe" - Mathéo LIAIGRE, 18/03/2024</p>
+        </footer>
     </body>
 </html>

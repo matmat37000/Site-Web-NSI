@@ -15,7 +15,7 @@ function funcDayToNight() {
     root.style.setProperty('--secondary-background-color', "#325327");
     root.style.setProperty('--day', "#325327");
     var image = document.getElementById("button-icon-cb");
-		image.src = "../svg/sun.svg";
+		image.src = "https://github.com/matmat37000/Site-Web-NSI/blob/main/svg/sun.png?raw=true";
     isDay = false;
   }
   else {
@@ -29,7 +29,7 @@ function funcDayToNight() {
     root.style.setProperty('--secondary-background-color', "#c1e857");
     root.style.setProperty('--day', "#c1e857");
     var image = document.getElementById("button-icon-cb");
-		image.src = "../svg/moon.svg";
+		image.src = "https://github.com/matmat37000/Site-Web-NSI/blob/main/svg/moon.png?raw=true";
     isDay = true;
   }
 };
