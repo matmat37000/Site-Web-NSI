@@ -379,7 +379,7 @@ footer {
     text-align: center;
     color: #fff;
     background-color: #19191a;
-    height: 25dvh;
+    height: 20dvw;
 }
 
 footer div .link {
@@ -406,6 +406,8 @@ footer p {
 
 /* Media queries */
 
-@media (max-width: 600px) {
-
+@media (max-width: 1060px) {
+    footer {
+        height: 30dvw;
+    }
 }

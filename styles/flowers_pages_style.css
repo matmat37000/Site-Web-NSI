@@ -18,16 +18,50 @@ main {
 }
 
 .flower-img-div {
+    padding-top: 5dvh;
     display: flex;
     justify-content: center;
     width: 50%;
 }
 
 .flower-img {
-    width: 100dvw;
-    margin: 60px;
     border-radius: 20px;
     box-shadow: 0px 15px 5px rgba(0, 0, 0, 0.267);
+}
+
+#Roses_images {
+    width: 100dvw;
+    margin: 60px;
+}
+
+#Tulipes_images {
+    width: 50dvw;
+    margin: 60px;
+}
+
+#Renoncule_images {
+    width: 50dvw;
+    margin: 60px;
+}
+
+#Wax_images {
+    width: 45dvw;
+    margin: 60px;
+}
+
+#Fraisea_images {
+    width: 47dvw;
+    margin: 60px;
+}
+
+#Cyclamen_images {
+    width: 50dvw;
+    margin: 60px;
+}
+
+#Rosier_images {
+    width: 50dvw;
+    margin: 60px;
 }
 
 .wiki {
@@ -37,25 +71,23 @@ main {
     scrollbar-width: thin;
     scroll-behavior: smooth;
     scrollbar-color: inherit;
+    padding-bottom: 12dvw;
 }
-
-/* Color selection */
-#rose {}
 
 
 @media (max-width: 1879px) {
     main {
         flex-direction: column;
+        padding-bottom: 120dvw;
     }
 
     .flower-img {
         margin-top: 12dvh;
-        width: 80dvw;
     }
 
     .wiki {
         margin-bottom: 1dvw;
-        padding-bottom: 12dvw;
+        padding: 12dvh;
     }
 
 }
