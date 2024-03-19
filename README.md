@@ -7,4 +7,4 @@ BORDIER-AUPY Mathieu </br>
 LIAIGRE Mathéo
 
 # Liveshare
-https://prod.liveshare.vsengsaas.visualstudio.com/join?21216153994E35DE4898FD77DBBEAD5BF2CA
+https://prod.liveshare.vsengsaas.visualstudio.com/join?7EB3533651ECB2AFA1553AC4D786B1EAFE1A
