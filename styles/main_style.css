@@ -404,6 +404,24 @@ footer p {
     padding: 5px;
 }
 
+footer a {
+    color: #fff;
+}
+
+#sources {
+    color: #fff;
+    height: 100%;
+    font-size: 32px;
+}
+
+.back-source a {
+    color: #fff;
+}
+
+.back-source a::after {
+    background-color: #fff;
+}
+
 /* Media queries */
 
 @media (max-width: 1060px) {

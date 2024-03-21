@@ -35,7 +35,7 @@ main {
 }
 
 #Tulipes_images {
-    width: 50dvw;
+    width: 45dvw;
     margin: 60px;
 }
 
@@ -55,12 +55,12 @@ main {
 }
 
 #Cyclamen_images {
-    width: 50dvw;
+    width: 45dvw;
     margin: 60px;
 }
 
 #Rosier_images {
-    width: 50dvw;
+    width: 45dvw;
     margin: 60px;
 }
 
@@ -74,6 +74,30 @@ main {
     padding-bottom: 12dvw;
 }
 
+#Solanome_images {
+    width: 42dvw;
+    margin: 60px;
+}
+
+#Auturium_images {
+    width: 45dvw;
+    margin: 60px;
+}
+
+#Spatyphilium_images {
+    width: 45dvw;
+    margin: 60px;
+}
+
+#Fougeres_images {
+    width: 45dvw;
+    margin: 60px;
+}
+
+#Orchidees_images {
+    width: 45dvw;
+    margin: 60px;
+}
 
 @media (max-width: 1879px) {
     main {
