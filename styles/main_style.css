@@ -35,7 +35,7 @@ html {
     scroll-snap-align: start;
     scroll-snap-type: proximity;
     scrollbar-color: var(--black-font-color) #ffffff00;
-    scrollbar-width: none;
+
 }
 
 body {
